@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find px4)/launch/multi_uav_mavros_sitl.launch"/>
+
+    <node ns="uav1" pkg="offb" type="offb_node" output="screen"
+	args="/turtle1" name="turtle1_tf_broadcaster"/>
+
+    <node ns="uav2" pkg="offb1" type="offb1_node" output="screen"
+	args="/turtle2" name="turtle2_tf_broadcaster"/>
+
+    <node ns="uav3" name="listener" pkg="offb2" type="offb2_node" output="screen"/>
+    <node ns="uav4" pkg="offb3" type="offb3_node" output="screen"
+	args="/turtle3" name="turtle3_tf_broadcaster"/>
+    <node ns="uav5" pkg="offb4" type="offb4_node" output="screen"
+	args="/turtle4" name="turtle4_tf_broadcaster"/>
+
+
+
+
+    <node ns="uav6" pkg="offb5" type="offb5_node" output="screen"
+	args="/turtle6" name="turtle6_tf_broadcaster"/>
+
+    <node ns="uav7" pkg="offb6" type="offb6_node" output="screen"
+	args="/turtle7" name="turtle7_tf_broadcaster"/>
+
+    <node ns="uav8" name="listener" pkg="offb7" type="offb7_node" output="screen"/>
+    <node ns="uav9" pkg="offb8" type="offb8_node" output="screen"
+	args="/turtle9" name="turtle9_tf_broadcaster"/>
+    <node ns="uav10" pkg="offb9" type="offb9_node" output="screen"
+	args="/turtle10" name="turtle10_tf_broadcaster"/>
+
+
+
+
+    <node ns="uav11" pkg="offb10" type="offb10_node" output="screen"
+	args="/turtle11" name="turtle11_tf_broadcaster"/>
+
+    <node ns="uav12" pkg="offb11" type="offb11_node" output="screen"
+	args="/turtle12" name="turtle12_tf_broadcaster"/>
+
+    <node ns="uav13" name="listener" pkg="offb12" type="offb12_node" output="screen"/>
+    <node ns="uav14" pkg="offb13" type="offb13_node" output="screen"
+	args="/turtle14" name="turtle14_tf_broadcaster"/>
+    <node ns="uav15" pkg="offb14" type="offb14_node" output="screen"
+	args="/turtle15" name="turtle15_tf_broadcaster"/>
+
+
+</launch>
+
+
